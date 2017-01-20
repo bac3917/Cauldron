@@ -1,4 +1,4 @@
-Match_addr,City,Subregion,Region,Postal,Lat,Lon,DisplayX,DisplayY,Xmin,Xmax,Ymin,Ymax,ARC_Addres,ARC_Neighb,ARC_City,ARC_Subreg,ARC_Region,ARC_Postal,ARC_Post_1,ARC_Countr,CrimeDate,Address_Cl,Zip_Code,CrimeType
+Match_addr,City,Subregion,Region,Postal,Lng,Lat,DisplayX,DisplayY,Xmin,Xmax,Ymin,Ymax,ARC_Addres,ARC_Neighb,ARC_City,ARC_Subreg,ARC_Region,ARC_Postal,ARC_Post_1,ARC_Countr,CrimeDate,Address_Cl,Zip_Code,CrimeType
 "150 Hampden Ave, Hampden Twp, Pennsylvania, 17011",Hampden Twp,Cumberland,Pennsylvania,17011,-76.963623,40.235384,-76.963623,40.235384,-76.964623,-76.962623,40.234384,40.236384,150 Hampden Avenue 17011,,,17011,,,,,6/3/2016,150 Hampden Avenue 17011,17011,Access Device Fraud
 "17011, Camp Hill, Pennsylvania",Camp Hill,,Pennsylvania,17011,-76.937391,40.239519,-76.937391,40.239519,-76.942391,-76.932391,40.234519,40.244519,150 Louisa Lane 17011,,,17011,,,,,4/7/2016,150 Louisa Lane 17011,17011,Access Device Fraud
 "17011, Camp Hill, Pennsylvania",Camp Hill,,Pennsylvania,17011,-76.937391,40.239519,-76.937391,40.239519,-76.942391,-76.932391,40.234519,40.244519,150 Louisa Lane 17011,,,17011,,,,,6/2/2015,150 Louisa Lane 17011,17011,Access Device Fraud
