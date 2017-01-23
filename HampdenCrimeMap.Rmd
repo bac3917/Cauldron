@@ -1,0 +1,65 @@
+---
+title: "Crime Logs from Hampden Township Police, Hampden Township, PA"
+author: "BAC"
+date: "Fall 2016"
+output: html_document
+---
+
+```{r setup, out.width = '\\maxwidth', include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  fig.width=12, fig.height=8)
+library(leaflet)
+library(RCurl)
+library(descr,plyr)
+crime.raw<-getURL("https://raw.githubusercontent.com/bac3917/Cauldron/master/HampdenCrime2015-2016.csv")
+
+Hcrime<-read.csv(text=crime.raw)
+
+```
+
+
+## Hampden Township 2015 and 2016 Police Blotter Incidents
+#### NOTE: Some incidents are not mapped due to insufficient location information.
+#### NOTE: In many cases block centroid was mapped instead of specific address.
+#### Source: http://www.hampdentownship.us/township-department/police-department/police-blotter/
+
+  
+#### Table 1: Incidents by Year (map follows below)
+```{r tables, echo=FALSE}
+Hcrime$Year<-format(as.Date(Hcrime$CrimeDate, format="%d/%m/%Y"),"%Y")
+CrossTable(Hcrime$CrimeType,Hcrime$Year,prop.t = FALSE,prop.c = FALSE,prop.r = TRUE,prop.chisq = FALSE)
+```
+
+
+```{r leaflet, echo=FALSE}
+groupColors=colorFactor(palette = "Greens",domain=Hcrime$CrimeType)
+#(map1 <- leaflet(Hcrime) %>% addProviderTiles("Stamen.Toner") %>% 
+#        setView(-76.977877, 40.24976, 13) %>% # map location
+#        addMarkers(data=Hcrime, lng=Hcrime$Lng, lat=Hcrime$Lat, popup=Hcrime$CrimeDate)
+#)
+
+#(map2 <- leaflet(Hcrime) %>% addTiles() %>% addProviderTiles("Stamen.Toner") %>% 
+#        setView(-76.987877, 40.24976, 13) %>% # map location
+#        addCircleMarkers(data=Hcrime, lng=Hcrime$Lng, lat=Hcrime$Lat))
+
+
+(map2<- leaflet(Hcrime) %>% addTiles() %>% addProviderTiles("Stamen.Toner") %>% 
+        setView(-76.977877, 40.24976, 13) %>% # map location
+        addCircleMarkers(data=Hcrime, lng=Hcrime$Lng, lat=Hcrime$Lat, radius=5,
+                         color=~ifelse(Hcrime$CrimeType=='','red','blue'),
+                         clusterOptions=markerClusterOptions()
+                         ))
+        
+pal<-colorFactor(palette="YlGnBu",domain=Hcrime$CrimeType)
+# How to: https://www.r-bloggers.com/building-interactive-maps-with-leaflet/  
+(map3<- leaflet(Hcrime) %>% addTiles() %>% addProviderTiles("Stamen.Toner") %>% 
+        setView(-76.977877, 40.24976, 13) %>% # map location
+        addCircleMarkers(data=Hcrime, lng=Hcrime$Lng, lat=Hcrime$Lat, radius=5,
+                         color=~~pal(Hcrime$CrimeType),
+                         clusterOptions=markerClusterOptions()
+                         )%>%
+                addLegend("bottomright",pal=pal,values=~Hcrime$CrimeType, title="Types of Crime", opacity=1)
+        )
+
+
+```
+
