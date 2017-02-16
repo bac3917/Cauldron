@@ -1,0 +1,27 @@
+            ---
+title: "pde pov school"
+author: "CSC/BAC"
+date: "February 16, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(RCurl)
+PDE1314_hiPov<-getURL("https://raw.githubusercontent.com/bac3917/Cauldron/master/PAschools1314hiPov.csv")
+PDE1314_hiPov<-read.csv(text=PDE1314_hiPov)
+PDE1314_hiPov$year<-"2013-14"
+# delete variables so files can be merged/stacked
+PDE1314_hiPov$DataElement.1<-PDE1314_hiPov$DataElement.2<-PDE1314_hiPov$DataElement.3<-PDE1314_hiPov$DataElement.4<-PDE1314_hiPov$DataElement.5<-PDE1314_hiPov$DataElement.6<-PDE1314_hiPov$DataElement.7<-PDE1314_hiPov$DataElement.8<-NULL
+PDE1314_hiPov$Attendance1314<-PDE1314_hiPov$GradRate1314<-PDE1314_hiPov$Academic1314<-PDE1314_hiPov$Grade3Read1314<-NULL
+
+PDE1516_hiPov<-getURL("https://raw.githubusercontent.com/bac3917/Cauldron/master/PAschools1516hiPov.csv")
+PDE1516_hiPov<-read.csv(text=PDE1516_hiPov)
+PDE1516_hiPov$year<-"2013-14"
+
+#merge files
+PDE2Year<-rbind(PDE1516_hiPov,PDE1314_hiPov)
+
+```
+
+
