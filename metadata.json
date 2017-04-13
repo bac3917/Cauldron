@@ -1,0 +1,252 @@
+{
+    "release": {
+        "id": "acs2015_5yr",
+        "name": "ACS 2015 5-year",
+        "years": "2011-2015"
+    },
+    "tables": {
+        "B17017": {
+            "title": "Poverty Status in the Past 12 Months by Household Type by Age of Householder",
+            "universe": "Households",
+            "denominator_column_id": "B17017001",
+            "columns": {
+                "B17017001": {
+                    "name": "Total:",
+                    "indent": 0
+                },
+                "B17017002": {
+                    "name": "Income in the past 12 months below poverty level:",
+                    "indent": 1
+                },
+                "B17017003": {
+                    "name": "Family households:",
+                    "indent": 2
+                },
+                "B17017004": {
+                    "name": "Married-couple family:",
+                    "indent": 3
+                },
+                "B17017005": {
+                    "name": "Householder under 25 years",
+                    "indent": 4
+                },
+                "B17017006": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 4
+                },
+                "B17017007": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 4
+                },
+                "B17017008": {
+                    "name": "Householder 65 years and over",
+                    "indent": 4
+                },
+                "B17017009": {
+                    "name": "Other family:",
+                    "indent": 3
+                },
+                "B17017010": {
+                    "name": "Male householder, no wife present:",
+                    "indent": 4
+                },
+                "B17017011": {
+                    "name": "Householder under 25 years",
+                    "indent": 5
+                },
+                "B17017012": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 5
+                },
+                "B17017013": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 5
+                },
+                "B17017014": {
+                    "name": "Householder 65 years and over",
+                    "indent": 5
+                },
+                "B17017015": {
+                    "name": "Female householder, no husband present:",
+                    "indent": 4
+                },
+                "B17017016": {
+                    "name": "Householder under 25 years",
+                    "indent": 5
+                },
+                "B17017017": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 5
+                },
+                "B17017018": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 5
+                },
+                "B17017019": {
+                    "name": "Householder 65 years and over",
+                    "indent": 5
+                },
+                "B17017020": {
+                    "name": "Nonfamily households:",
+                    "indent": 2
+                },
+                "B17017021": {
+                    "name": "Male householder:",
+                    "indent": 3
+                },
+                "B17017022": {
+                    "name": "Householder under 25 years",
+                    "indent": 4
+                },
+                "B17017023": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 4
+                },
+                "B17017024": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 4
+                },
+                "B17017025": {
+                    "name": "Householder 65 years and over",
+                    "indent": 4
+                },
+                "B17017026": {
+                    "name": "Female householder:",
+                    "indent": 3
+                },
+                "B17017027": {
+                    "name": "Householder under 25 years",
+                    "indent": 4
+                },
+                "B17017028": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 4
+                },
+                "B17017029": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 4
+                },
+                "B17017030": {
+                    "name": "Householder 65 years and over",
+                    "indent": 4
+                },
+                "B17017031": {
+                    "name": "Income in the past 12 months at or above poverty level:",
+                    "indent": 1
+                },
+                "B17017032": {
+                    "name": "Family households:",
+                    "indent": 2
+                },
+                "B17017033": {
+                    "name": "Married-couple family:",
+                    "indent": 3
+                },
+                "B17017034": {
+                    "name": "Householder under 25 years",
+                    "indent": 4
+                },
+                "B17017035": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 4
+                },
+                "B17017036": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 4
+                },
+                "B17017037": {
+                    "name": "Householder 65 years and over",
+                    "indent": 4
+                },
+                "B17017038": {
+                    "name": "Other family:",
+                    "indent": 3
+                },
+                "B17017039": {
+                    "name": "Male householder, no wife present:",
+                    "indent": 4
+                },
+                "B17017040": {
+                    "name": "Householder under 25 years",
+                    "indent": 5
+                },
+                "B17017041": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 5
+                },
+                "B17017042": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 5
+                },
+                "B17017043": {
+                    "name": "Householder 65 years and over",
+                    "indent": 5
+                },
+                "B17017044": {
+                    "name": "Female householder, no husband present:",
+                    "indent": 4
+                },
+                "B17017045": {
+                    "name": "Householder under 25 years",
+                    "indent": 5
+                },
+                "B17017046": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 5
+                },
+                "B17017047": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 5
+                },
+                "B17017048": {
+                    "name": "Householder 65 years and over",
+                    "indent": 5
+                },
+                "B17017049": {
+                    "name": "Nonfamily households:",
+                    "indent": 2
+                },
+                "B17017050": {
+                    "name": "Male householder:",
+                    "indent": 3
+                },
+                "B17017051": {
+                    "name": "Householder under 25 years",
+                    "indent": 4
+                },
+                "B17017052": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 4
+                },
+                "B17017053": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 4
+                },
+                "B17017054": {
+                    "name": "Householder 65 years and over",
+                    "indent": 4
+                },
+                "B17017055": {
+                    "name": "Female householder:",
+                    "indent": 3
+                },
+                "B17017056": {
+                    "name": "Householder under 25 years",
+                    "indent": 4
+                },
+                "B17017057": {
+                    "name": "Householder 25 to 44 years",
+                    "indent": 4
+                },
+                "B17017058": {
+                    "name": "Householder 45 to 64 years",
+                    "indent": 4
+                },
+                "B17017059": {
+                    "name": "Householder 65 years and over",
+                    "indent": 4
+                }
+            }
+        }
+    }
+}
