@@ -1,0 +1,27 @@
+---
+title: "HampdenCrime"
+output: html_document
+---
+### Source data: http://www.hampdentownship.us/township-department/police-department/police-blotter/
+
+### Cleaned data at https://github.com/bac3917/Cauldron
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(leaflet)
+require(ggplot2)
+require(plyr)
+HCrime <- read.csv("~/HampdenCrime.csv")
+```
+
+## Based on 2015 and 2016 Hampden Crime - Police Blotter:
+```{r basic crime analysis}
+# use "_clean" columns
+HCrime$Type2<-as.factor(HCrime$Type_Clean1)
+
+count(HCrime$Type2)
+
+plot(HCrime$Type2, main="2015 and 2016 Crime INcidents by Type in Hampden Township")
+
+
+```

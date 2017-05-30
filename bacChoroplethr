@@ -1,0 +1,19 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("choroplethr")
+#install.packages("rMaps")
+#library(choroplethr)
+#library(rMaps)
+```
+
+## R Markdown
+
+
+```{r example1,echo=TRUE,message=TRUE}
+#api.key.install('f31e1d193781bd091f9b23f4c336eb2ddfc42981')
+
+state_choropleth_acs("B19301", num_colors=1, zoom=c("new york", "new jersey", "connecticut"))
+
+```
+
