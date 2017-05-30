@@ -1,0 +1,108 @@
+---
+title: "Hbg.SK Survey"
+author: "BAC"
+date: "February 9, 2017"
+output: html_document
+---
+
+---
+title: "Harrisburg Sketchers Survey Results"
+author: "BAC"
+date: "February 2017"
+output: HTML
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(Hmisc)
+library(plotly)
+library(googlesheets)
+suppressMessages(library(dplyr))
+my_sheets<-gs_ls()
+my_sheets  # prints a list of sheets on the Google account
+hbgsk<-gs_title("hbgSk2017") #assigns a paticular sheet to an R dataframe
+gs_ws_ls(hbgsk)                         # This command identifies the name of worksheet used in next command
+#read data
+hbgsk <-hbgsk %>% gs_read(ws = "Form Responses 1")
+
+# read certain cells and not the column names:
+# trainers<-trainers %>% gs_read(ws = "Form Responses 1",range=cell_cols(1:8),col_names=FALSE)
+# change olong column names to short ones
+colnames(hbgsk)<-paste0("Q",1:ncol(hbgsk))
+library(reshape)
+hbgsk<-rename(hbgsk,c(Q5='zip'))
+label(hbgsk$Q2)<-"First Name"
+label(hbgsk$Q6)<-"Number Times at HBG SK Events"
+label(hbgsk$Q7)<-"How Often You Sketch"
+library(xlsx)
+write.table(hbgsk, "c:/bac/HBGsklist.txt",sep="\t")
+
+```
+## Results from February 2017 HBGsk Membership Survey
+
+```{r,echo=TRUE, message=FALSE}
+t1<-table(hbgsk$Q7,hbgsk$Q6)
+t1
+# pie charts require numeric data; first convert string to factor, then to numeric!
+hbgsk$Q6n<-factor(hbgsk$Q6)
+hbgsk$Q6n<-as.numeric(hbgsk$Q6n)
+#plotly pie chart
+# Use factor Q6 for labels and numeric Q6n for values
+p1<-plot_ly(hbgsk, labels=~hbgsk$Q6,values=hbgsk$Q6n,type='pie') %>% 
+        layout(title='How Many Times Attended HBGsk?', xaxis=list(showgrid=FALSE),
+                yaxis=list(showgrid=FALSE))
+p1
+
+
+hbgsk$Q7n<-as.numeric(factor(hbgsk$Q7))
+p2<-plot_ly(hbgsk, labels=~hbgsk$Q7,values=hbgsk$Q7n,type='pie') %>% 
+        layout(title='How Often Do You Sketch?', xaxis=list(showgrid=FALSE),
+                yaxis=list(showgrid=FALSE))
+p2
+
+```
+
+```{R map1}
+library(rgdal)
+library(leaflet)
+SKmap<-readOGR("//FILESVR01/Research_and_Evaluation_Group/GENERAL/GIS_Shapefiles/PA/PA_ZIPS","CentralPAzips")
+plot(SKmap,xlim=c(-77.6,-75.5),ylim=c(49.9,39.8))
+plot(SKmap,col=hbgsk$Q5)
+(SKmap2<- leaflet(SKmap) %>% addTiles() %>% addProviderTiles("Stamen.Toner") %>% 
+        setView(-76.977877, 40.06, 8) %>% # map location
+        addPolygons(data=hbgsk,fillColor = hbgsk$Q6) 
+        )
+
+
+
+
+
+
+#save data slot
+url<-"https://github.com/bac3917/Cauldron/blob/master/CentralPAzips.shp"
+downloaddir<-"c:/"
+destname<-"CentralPAzips.shp"
+download.file(url,destname)
+filename<-list.files(downloaddir, pattern=".shp", full.names=FALSE)
+filename<-gsub(".shp", "", filename)
+dat<-readOGR(downloaddir, filename) 
+
+
+dataSave<-subdat@data[, c(subdat$ZCTA5CE,subdat$INTPTLAT,subdat$INTPTLON)]
+# see: http://zevross.com/blog/2014/04/11/using-r-to-quickly-create-an-interactive-online-map-using-the-leafletr-package/
+#transform to WGS84 coordinate frmame
+subdat<-spTransform(SKmap,CRS("+init=epsg:4326"))
+
+# ----- to write to geojson we need a SpatialPolygonsDataFrame
+subdat<-SpatialPolygonsDataFrame(subdat, data=SKmap)
+
+(SKmap3<- leaflet() %>% addTiles() %>% addProviderTiles("Stamen.Toner")%>%
+        setView(-76.977877, 40.06, 8) %>% # map location
+        addPolygons(data=SKmap,lng=as.numeric(SKmap$INTPTLON),lat=as.numeric(SKmap$INTPTLAT),
+                    stroke=TRUE,   fillColor = hbgsk$Q6) 
+        )
+
+
+```

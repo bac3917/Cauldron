@@ -1,0 +1,29 @@
+---
+title: "paSchools"
+author: "BAC"
+date: "March 17, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+CCD2012_13_PA <- read.csv("//filesvr01/Research_and_Evaluation_Group/GENERAL/FederalDataSets/CCD_Data/CCD2012-13_PA.csv")
+
+```
+
+## Map of PA Schools
+### Uses NCES CCD ULOCAL >= 31 as criterion for rural.
+```{r ruralORnot, echo=FALSE}
+CCD2012_13_PA$rural<-ifelse(CCD2012_13_PA$ULOCAL>=31,1,2)
+
+CCD2012_13_PA$rural<-as.factor(CCD2012_13_PA$rural)
+
+(map2<- leaflet(CCD2012_13_PA) %>% addTiles() %>% addProviderTiles("Stamen.Toner") %>% 
+        setView(-76.977877, 40.24976, 8) %>% # map location
+        addCircles(data=CCD2012_13_PA, lng=CCD2012_13_PA$LONCOD, 
+        lat=CCD2012_13_PA$LATCOD,radius=8,popup=CCD2012_13_PA$SCHNAM,
+        color=~ifelse(CCD2012_13_PA$rural=='1','green','blue'))
+        )
+```
+

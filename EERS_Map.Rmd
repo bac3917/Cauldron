@@ -1,0 +1,32 @@
+---
+title: "EERS Board Member Locations"
+author: "BAC"
+date: "Fall 2016"
+output: html_document
+---
+
+```{r setup, out.width = '\\maxwidth', include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(leaflet)
+library(RCurl)
+library(ggmap)
+EERS<- read.csv("//s-drive/home/Profiles/bcohen/Desktop/GitHub/Cauldron/EERS_Board.csv")
+
+```
+
+
+```{r leaflet, echo=FALSE}
+(m3 <- leaflet(EERS) %>% addProviderTiles("Thunderforest.Landscape") %>% 
+        setView(-76.887877, 39.00, 5) %>% # map location
+        addMarkers(data=EERS, popup=EERS$NameShort))
+
+#Compute distances to Wash DC for all members
+place<-c("Harrisburg, PA")
+qq<-c(EERS$Lat,EERS$Lon)
+
+dist2<-lapply(qq,function(x)mapdist(from = "Harrisburg,PA", to=qq))
+
+dist<-mapdist(from="Harrisburg, PA", to=EERS$Location)
+# http://nagraj.net/notes/calculating-geographic-distance-with-r/
+```
+

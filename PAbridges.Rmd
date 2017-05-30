@@ -1,0 +1,32 @@
+---
+title: "PA Bridges"
+author: "BAC"
+date: "January 23, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(RSocrata)
+library(plyr)
+# Pa Structurally Deficient  Bridges API Endpoint "https://data.pa.gov/resource/naza-5mua.json"
+## Here's my RSocrata R query.
+PAbridges<- read.socrata("https://data.pa.gov/resource/naza-5mua.json")
+(nrow(bridge_query))
+ 
+```
+
+
+```{r basics}
+count(PAbridges$year_built)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

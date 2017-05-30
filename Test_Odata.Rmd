@@ -1,0 +1,43 @@
+---
+title: "PA Bridges"
+author: "BAC"
+date: "November 18, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+library('httr')
+library('OData')
+library('RCurl')
+bridges.raw<-retrieveData("https://data.pa.gov/OData.svc/we8x-iva4?$format=json")
+
+bridges2<-read.csv("bridges.raw"" )
+
+PAbridges<- read.csv("C:/Users/bcohen/Downloads/State_Structurally_Deficient_Bridges_Let_CY_2015-2020_Transportation.csv")
+```
+
+### Bridges
+
+```{r leaflet}
+groupColors=colorFactor(palette = "RdYlBu",domain=ScrantonCats$Cat_Boots)
+(Bridges2 <- leaflet(PAbridges) %>% addProviderTiles("Stamen.Toner") %>% 
+        setView(-75.645035, 41.40796, 7) %>% # map location
+        addCircles(PAbridges$, ~ScrantonCats$Lat, color = ~groupColors(ScrantonCats$Cat_Boots), radius=43)) %>% 
+        addLegend(position="topright",pal=groupColors,values=~ScrantonCats$Cat_Boots)
+
+Cat
+Cat %>% addMarkers(data=ScrantonCats) %>% icon=CatIcon)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

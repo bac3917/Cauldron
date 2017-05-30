@@ -1,0 +1,54 @@
+---
+title: "PA Wells"
+author: "BAC"
+date: "January 23, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(RSocrata)
+library(leaflet)
+library(plyr)
+library(rgdal)
+library(utils)
+# Pa Structurally Deficient  Bridges API Endpoint "https://data.pa.gov/resource/naza-5mua.json"
+## Here's my RSocrata R query.
+wells<- read.socrata("https://data.pa.gov/resource/vsaj-gjez.json")
+ls(wells)
+
+parks<-readOGR(dsn="//FILESVR01/Research_and_Evaluation_Group/GENERAL/GIS_Shapefiles/PA",layer="Pennsylvania_State_Park_Boundaries")
+
+forests<-readOGR(dsn="//FILESVR01/Research_and_Evaluation_Group/GENERAL/GIS_Shapefiles/PA",layer="Pennsylvania_State_Forest_Boundary")
+
+places<-readOGR(dsn="//FILESVR01/Research_and_Evaluation_Group/GENERAL/GIS_Shapefiles/census/Places",layer="tl_2014_42_place")
+
+```
+
+### PA Wells
+```{r basics}
+(wellsMap<- leaflet(wells) %>% addTiles() %>% addProviderTiles("Stamen.Toner") %>%
+setView(-76.977877, 40.824976, 7) %>% # map location
+addCircleMarkers(data=wells, lng=wells$longitude, lat=wells$latitude, radius=5, popup=wells$client,
+clusterOptions=markerClusterOptions()
+))
+count(wells$client)
+```
+```{r wells and parks and forests}
+pal <- colorNumeric(  palette = "Reds",  domain = parks$OBJECTID )
+
+map2<-leaflet(data = parks) %>%
+        setView(-76.977877, 40.824976, 7) %>% # map location
+        addProviderTiles("CartoDB.Positron") %>%
+        addPolygons(fillColor = ~pal(parks$OBJECTID), fillOpacity = 0.8, color = "#BDBDC3", weight = 1) %>%
+        addPolygons(data=forests) %>%
+        addPolygons(data=places, fillColor="black")  %>%
+        addCircleMarkers(data=wells, lng=wells$longitude, lat=wells$latitude, radius=5, popup=wells$client,
+clusterOptions=markerClusterOptions()          )
+
+
+
+```
+
+
+
