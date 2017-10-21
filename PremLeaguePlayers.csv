@@ -1,7 +1,7 @@
 Team,POS,NO.,PLAYER,LastName,AGE,GS,SB,G,SH,SG,A,FC,FS,YC,RC
 NEW,D,2,Ciaran Clark,Clark,28,7,0,1,3,1,0,5,8,1,0
 NEW,D,3,Paul Dummett,Dummett,25,1,0,0,0,0,0,0,0,0,0
-NEW,D,27,Jes˙s G·mez,G·mez,32,1,1,0,1,0,0,0,1,0,0
+NEW,D,27,Jes√∫s Gamez,Gamez,32,1,1,0,1,0,0,0,1,0,0
 NEW,D,25,Massadio Haidara,Haidara,24,--,--,--,--,--,--,--,--,--,--
 NEW,D,6,Jamaal Lascelles,Lascelles,23,7,1,2,5,4,0,6,3,2,0
 NEW,D,20,Florian Lejeune,Lejeune,26,2,0,0,3,2,0,1,3,0,0
@@ -13,7 +13,7 @@ NEW,M,16,Rolando Aarons,Aarons,21,0,0,0,0,0,0,0,0,0,0
 NEW,M,30,Christian Atsu,Atsu,25,7,1,1,12,4,1,2,7,0,0
 NEW,M,35,Daniel Tan Barlaser,Tan Barlaser,20,--,--,--,--,--,--,--,--,--,--
 NEW,M,4,Jack Colback,Colback,27,--,--,--,--,--,--,--,--,--,--
-NEW,M,10,Mohamed DiamÈ,DiamÈ,30,0,5,0,1,1,0,1,1,0,0
+NEW,M,10,Mohamed Diame,Diame,30,0,5,0,1,1,0,1,1,0,0
 NEW,M,14,Isaac Hayden,Hayden,22,7,1,1,5,3,0,14,6,4,0
 NEW,M,23,Mikel Merino,Merino,21,6,2,0,5,2,0,8,10,2,0
 NEW,M,7,Jacob Murphy,Murphy,22,1,3,0,4,0,0,2,0,0,0
@@ -22,31 +22,31 @@ NEW,M,24,Henri Saivet,Saivet,26,0,0,0,0,0,0,0,0,0,0
 NEW,M,8,Jonjo Shelvey,Shelvey,25,3,2,0,8,1,0,1,1,0,1
 NEW,F,9,Dwight Gayle,Gayle,28,2,5,0,5,2,0,6,4,1,0
 NEW,F,45,Aleksandar Mitrovic,Mitrovic,23,0,1,1,3,2,0,1,1,0,0
-NEW,F,17,Ayoze PÈrez,PÈrez,23,8,0,1,14,4,1,12,10,1,0
+NEW,F,17,Ayoze P√©rez,Perez,23,8,0,1,14,4,1,12,10,1,0
 NEW,F,21,Joselu,Joselu,27,6,1,2,22,11,0,10,3,1,0
 CHE,D,3,Marcos Alonso,Alonso,26,8,0,2,14,5,0,7,8,3,0
-CHE,D,28,CÈsar Azpilicueta,Azpilicueta,28,8,0,0,2,1,4,7,1,1,0
+CHE,D,28,C√©sar Azpilicueta,Azpilicueta,28,8,0,0,2,1,4,7,1,1,0
 CHE,D,24,Gary Cahill,Cahill,31,4,1,0,0,0,0,2,1,0,1
 CHE,D,27,Andreas Christensen,Christensen,21,3,3,0,1,0,0,1,3,0,0
 CHE,D,35,Jake Clark-Salter,Clark-Salter,20,--,--,--,--,--,--,--,--,--,--
 CHE,D,30,David Luiz,Luiz,30,6,0,1,7,3,0,9,9,3,1
 CHE,D,--,Baba Rahman,Rahman,23,--,--,--,--,--,--,--,--,--,--
-CHE,D,2,Antonio R¸diger,R¸diger,24,6,0,0,2,0,1,6,6,2,0
+CHE,D,2,Antonio R√ºdiger,R√ºdiger,24,6,0,0,2,0,1,6,6,2,0
 CHE,D,21,Davide Zappacosta,Zappacosta,25,0,2,0,3,1,0,0,0,0,0
 CHE,M,44,Ethan Ampadu,Ampadu,17,--,--,--,--,--,--,--,--,--,--
-CHE,M,14,TiemouÈ Bakayoko,Bakayoko,23,5,2,1,4,1,1,15,5,1,0
+CHE,M,14,Tiemou√© Bakayoko,Bakayoko,23,5,2,1,4,1,1,15,5,1,0
 CHE,M,22,Willian,Willian,29,6,2,0,9,3,1,3,13,0,0
 CHE,M,6,Danny Drinkwater,Drinkwater,27,0,0,0,0,0,0,0,0,0,0
-CHE,M,4,Cesc F‡bregas,F‡bregas,30,6,1,1,8,2,1,7,7,0,1
+CHE,M,4,Cesc F√†bregas,Fabregas,30,6,1,1,8,2,1,7,7,0,1
 CHE,M,10,Eden Hazard,Hazard,26,2,3,0,3,2,0,1,10,0,0
-CHE,M,7,N'Golo KantÈ,KantÈ,26,7,0,1,5,1,0,8,2,1,0
+CHE,M,7,N'Golo Kant√©,Kant√©,26,7,0,1,5,1,0,8,2,1,0
 CHE,M,15,Victor Moses,Moses,26,6,0,0,7,2,0,12,6,1,0
 CHE,M,17,Charly Musonda,Musonda,21,0,2,0,2,0,0,3,0,0,0
 CHE,M,16,Kenedy,Kenedy,21,0,0,0,0,0,0,0,0,0,0
 CHE,M,36,Kyle Scott,Scott,19,0,0,0,0,0,0,0,0,0,0
 CHE,M,66,Dujon Sterling,Sterling,17,--,--,--,--,--,--,--,--,--,--
 CHE,F,23,Michy Batshuayi,Batshuayi,24,2,3,0,2,1,0,2,0,0,0
-CHE,F,9,¡lvaro Morata,Morata,24,6,1,6,21,8,2,8,6,1,0
+CHE,F,9,√Ålvaro Morata,Morata,24,6,1,6,21,8,2,8,6,1,0
 CHE,F,11,Pedro,Pedro,30,4,3,1,11,6,1,3,4,0,0
 LEI,D,29,Yohan Benalouane,Benalouane,30,--,--,--,--,--,--,--,--,--,--
 LEI,D,3,Ben Chilwell,Chilwell,20,2,1,0,0,0,0,2,2,0,0
@@ -72,3 +72,4 @@ LEI,F,20,Shinji Okazaki,Okazaki,31,6,1,3,8,5,0,8,3,1,0
 LEI,F,19,Islam Slimani,Slimani,29,1,5,0,4,2,1,0,0,0,0
 LEI,F,23,Leonardo Ulloa,Ulloa,31,0,0,0,0,0,0,0,0,0,0
 LEI,F,9,Jamie Vardy,Vardy,30,9,0,5,15,8,0,4,13,1,0
+  
