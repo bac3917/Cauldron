@@ -1,0 +1,68 @@
+countyName,fips3,fips5,Region8levels,Region7levels
+BLAIR,13,42013,Central Central,Central Central
+CAMBRIA,21,42021,Central Central,Central Central
+CENTRE,27,42027,Central Central,Central Central
+JUNIATA,67,42067,Central Central,Central Central
+MIFFLIN,87,42087,Central Central,Central Central
+NORTHUMBERLAND,97,42097,Central Central,Central Central
+SNYDER,109,42109,Central Central,Central Central
+UNION,119,42119,Central Central,Central Central
+HUNTINGDON,61,42061,Central Central,Central Central
+CARBON,25,42025,Northeast,Northeast
+COLUMBIA,37,42037,Northeast,Northeast
+LACKAWANNA,69,42069,Northeast,Northeast
+LUZERNE,79,42079,Northeast,Northeast
+MONROE,89,42089,Northeast,Northeast
+MONTOUR,93,42093,Northeast,Northeast
+NORTHAMPTON,95,42095,Northeast,Northeast
+PIKE,103,42103,Northeast,Northeast
+SCHUYLKILL,107,42107,Northeast,Northeast
+WAYNE,127,42127,Northeast,Northeast
+SUSQUEHANNA,115,42115,Northeast,Northeast
+WYOMING,131,42131,Northeast,Northeast
+BRADFORD,15,42015,Northern Tier,Northern Tier
+CAMERON,23,42023,Northern Tier,Northern Tier
+CLEARFIELD,33,42033,Northern Tier,Northern Tier
+CLINTON,35,42035,Northern Tier,Northern Tier
+ELK,47,42047,Northern Tier,Northern Tier
+FOREST,53,42053,Northern Tier,Northern Tier
+JEFFERSON,65,42065,Northern Tier,Northern Tier
+LYCOMING,81,42081,Northern Tier,Northern Tier
+MCKEAN,83,42083,Northern Tier,Northern Tier
+POTTER,105,42105,Northern Tier,Northern Tier
+SULLIVAN,113,42113,Northern Tier,Northern Tier
+TIOGA,117,42117,Northern Tier,Northern Tier
+WARREN,123,42123,Northern Tier,Northern Tier
+CLARION,31,42031,Northern Tier,Northern Tier
+CRAWFORD,39,42039,Northwest,Northwest
+ERIE,49,42049,Northwest,Northwest
+MERCER,85,42085,Northwest,Northwest
+VENANGO,121,42121,Northwest,Northwest
+PHILADELPHIA,101,42101,Philadelphia,Philadelphia
+INDIANA,63,42063,Pittsburgh Region,Pittsburgh Region
+ALLEGHENY,3,42003,Pittsburgh Region,Pittsburgh Region
+ARMSTRONG,5,42005,Pittsburgh Region,Pittsburgh Region
+BEAVER,7,42007,Pittsburgh Region,Pittsburgh Region
+BUTLER,19,42019,Pittsburgh Region,Pittsburgh Region
+FAYETTE,51,42051,Pittsburgh Region,Pittsburgh Region
+GREENE,59,42059,Pittsburgh Region,Pittsburgh Region
+LAWRENCE,73,42073,Pittsburgh Region,Pittsburgh Region
+WASHINGTON,125,42125,Pittsburgh Region,Pittsburgh Region
+WESTMORELAND,129,42129,Pittsburgh Region,Pittsburgh Region
+ADAMS,1,42001,South Central,Central Central
+BEDFORD,9,42009,South Central,Central Central
+CUMBERLAND,41,42041,South Central,Central Central
+DAUPHIN,43,42043,South Central,Central Central
+FRANKLIN,55,42055,South Central,Central Central
+FULTON,57,42057,South Central,Central Central
+PERRY,99,42099,South Central,Central Central
+SOMERSET,111,42111,South Central,Central Central
+YORK,133,42133,South Central,Central Central
+BUCKS,17,42017,Southeast,Southeast
+CHESTER,29,42029,Southeast,Southeast
+DELAWARE,45,42045,Southeast,Southeast
+MONTGOMERY,91,42091,Southeast,Southeast
+BERKS,11,42011,Southeast,Southeast
+LANCASTER,71,42071,Southeast,Southeast
+LEBANON,75,42075,Southeast,Southeast
+LEHIGH,77,42077,Southeast,Southeast
