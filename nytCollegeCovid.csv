@@ -1,0 +1,337 @@
+inst,infections,state
+Albright College,7,PA
+Allegheny College,29,PA
+Alvernia University,2,PA
+Arcadia University,1,PA
+Bloomsburg University of Pennsylvania,369,PA
+Bryn Athyn College‡,1,PA
+Bryn Mawr College,8,PA
+Bucknell University,29,PA
+Cabrini University,14,PA
+California University of Pennsylvania,7,PA
+Carnegie Mellon University,67,PA
+Cedar Crest College,1,PA
+Chatham University,47,PA
+Clarion University of Pennsylvania,2,PA
+Clarks Summit University,1,PA
+Community College of Allegheny County,31,PA
+DeSales University,8,PA
+Delaware Valley University,18,PA
+Drexel University,36,PA
+Duquesne University,167,PA
+East Stroudsburg University,9,PA
+Eastern University,21,PA
+Edinboro University,6,PA
+Elizabethtown College,15,PA
+Franklin and Marshall College,17,PA
+Gannon University,79,PA
+Geneva College,6,PA
+Gettysburg College,99,PA
+Grove City College,33,PA
+Haverford College,5,PA
+Holy Family University,4,PA
+Immaculata University,1,PA
+Indiana University of Pennsylvania,312,PA
+Juniata College,32,PA
+King's College,16,PA
+Kutztown University,346,PA
+La Roche University,2,PA
+La Salle University,18,PA
+Lafayette College,26,PA
+Lancaster Bible College,3,PA
+Lebanon Valley College,1,PA
+Lehigh University,262,PA
+Lock Haven University,90,PA
+Lycoming College,11,PA
+Mansfield University of Pennsylvania,14,PA
+Marywood University,31,PA
+Mercyhurst University,20,PA
+Messiah University,43,PA
+Millersville University of Pennsylvania,75,PA
+Misericordia University,35,PA
+Moravian College,28,PA
+Mount Aloysius College,41,PA
+Muhlenberg College,4,PA
+Neumann University,4,PA
+Penn State University,3883,PA
+Penn State University Abington,5,PA
+Penn State University Altoona,224,PA
+Penn State University Beaver,2,PA
+Penn State University Behrend,29,PA
+Penn State University Berks,11,PA
+Penn State University Brandywine,3,PA
+Penn State University College of Medicine*,19,PA
+Penn State University DuBois,1,PA
+Penn State University Fayette,3,PA
+Penn State University Harrisburg,21,PA
+Penn State University Hazleton,2,PA
+Penn State University Lehigh Valley,1,PA
+Penn State University Mont Alto,4,PA
+Penn State University New Kensington,3,PA
+Penn State University Schuylkill,3,PA
+Penn State University Scranton,14,PA
+Pennsylvania College of Technology,70,PA
+Point Park University,26,PA
+Robert Morris University,24,PA
+Rosemont College,7,PA
+Saint Francis University,30,PA
+Saint Joseph's University,278,PA
+Saint Vincent College,10,PA
+Seton Hill University,59,PA
+Shippensburg University of Pennsylvania,82,PA
+Slippery Rock University of Pennsylvania,206,PA
+Susquehanna University,14,PA
+Swarthmore College,24,PA
+Temple University,711,PA
+Thiel College,39,PA
+Thomas Jefferson University,140,PA
+University of Pennsylvania,660,PA
+University of Pittsburgh,398,PA
+University of Pittsburgh Johnstown,52,PA
+University of Pittsburgh at Bradford,25,PA
+University of Pittsburgh at Greensburg,7,PA
+University of Scranton,620,PA
+University of Valley Forge,2,PA
+University of the Sciences,24,PA
+Ursinus College,21,PA
+Villanova University,252,PA
+Washington & Jefferson College,3,PA
+Waynesburg University,18,PA
+West Chester University,100,PA
+Westminster College,16,PA
+Widener University,36,PA
+Wilkes University,41,PA
+SUNY Alfred State College of Technology,42,NY
+SUNY Broome Community College,28,NY
+SUNY College at Potsdam,17,NY
+Union College,12,NY
+Bloomfield College,15,NJ
+Caldwell University,1,NJ
+Centenary University,1,NJ
+College of Saint Elizabeth,5,NJ
+Drew University,1,NJ
+Fairleigh Dickinson University‡,9,NJ
+Fairleigh Dickinson University Florham‡,7,NJ
+Felician University,1,NJ
+Georgian Court University,25,NJ
+Kean University,28,NJ
+Union,0,NJ
+Monmouth University,390,NJ
+Montclair State University,83,NJ
+New Jersey City University,2,NJ
+Princeton University,88,NJ
+Ramapo College of New Jersey,21,NJ
+Rider University,19,NJ
+Rowan University,673,NJ
+Rutgers University,396,NJ
+Saint Peter's University,6,NJ
+Seton Hall University,48,NJ
+Stockton University,143,NJ
+The College of New Jersey,3,NJ
+William Paterson University,23,NJ
+Ashland University,40,NJ
+Adelphi University,31,NY
+Adirondack Community College,3,NY
+Albany College of Pharmacy and Health Sciences*,1,NY
+Albany Medical College,1,NY
+Alfred University,18,NY
+Bard College,1,NY
+Barnard College‡,2,NY
+Bryant & Stratton College,3,NY
+CUNY Baruch College,32,NY
+CUNY Borough of Manhattan Community College,22,NY
+CUNY Bronx Community College,12,NY
+CUNY Brooklyn College,25,NY
+CUNY City College of New York,24,NY
+CUNY College of Staten Island,7,NY
+CUNY Guttman Community College,1,NY
+CUNY Hostos Community College,1,NY
+CUNY Hunter College,58,NY
+CUNY John Jay College of Criminal Justice,6,NY
+CUNY Kingsborough Community College,8,NY
+CUNY LaGuardia Community College,37,NY
+CUNY Lehman College,8,NY
+CUNY Medgar Evers College,2,NY
+CUNY New York City College of Technology,10,NY
+CUNY Queens College,19,NY
+CUNY Queensborough Community College,6,NY
+CUNY York College,35,NY
+Canisius College,50,NY
+Cazenovia College,4,NY
+Clarkson University,8,NY
+Clinton Community College,1,NY
+Colgate University,51,NY
+College of Mount Saint Vincent,8,NY
+Columbia University,98,NY
+Columbia-Greene Community College,3,NY
+Concordia College New York,11,NY
+Cornell University,185,NY
+D'Youville College,20,NY
+Daemen College,15,NY
+Dominican College,2,NY
+Dutchess Community College,8,NY
+Elmira College,167,NY
+Erie Community College,19,NY
+Farmingdale State College,45,NY
+Finger Lakes Community College,9,NY
+Fordham University,57,NY
+Fulton-Montgomery Community College,3,NY
+Genesee Community College,9,NY
+Hamilton College,7,NY
+Hartwick College,31,NY
+Herkimer County Community College,6,NY
+Hilbert College,1,NY
+Hobart William Smith Colleges,39,NY
+Hofstra University,121,NY
+Houghton College,1,NY
+Hudson Valley Community College,22,NY
+Iona College,102,NY
+Ithaca College,36,NY
+Jamestown Community College,14,NY
+Keuka College,119,NY
+Le Moyne College,34,NY
+Long Island University,106,NY
+Manhattan College,31,NY
+Manhattanville College,4,NY
+Marist College,54,NY
+Marymount Manhattan College,2,NY
+Medaille College,43,NY
+Mercy College,32,NY
+Mohawk Valley Community College,4,NY
+Molloy College,29,NY
+Monroe College,18,NY
+Monroe Community College,66,NY
+Mount Saint Mary College,20,NY
+Nassau Community College,40,NY
+Nazareth College,58,NY
+New York Chiropractic College,4,NY
+New York Medical College*,7,NY
+New York University,455,NY
+Niagara County Community College,26,NY
+Niagara University,35,NY
+Nyack College,3,NY
+Onondaga Community College,28,NY
+Orange County Community College,10,NY
+Pace University,84,NY
+Pratt Institute,4,NY
+Rensselaer Polytechnic Institute,9,NY
+Roberts Wesleyan College,9,NY
+Rochester Institute of Technology,31,NY
+Rockland Community College,7,NY
+Russell Sage College,2,NY
+SUNY Albany,191,NY
+SUNY Binghamton,266,NY
+SUNY Brockport,29,NY
+SUNY Buffalo State,64,NY
+SUNY Canton,5,NY
+SUNY Cobleskill,15,NY
+SUNY College of Environmental Science and Forestry,4,NY
+SUNY College of Optometry,17,NY
+SUNY Corning Community College,21,NY
+SUNY Cortland,598,NY
+SUNY Delhi,16,NY
+SUNY Downstate Health Sciences University*,81,NY
+SUNY Empire State College,27,NY
+SUNY Geneseo,56,NY
+SUNY Maritime College,35,NY
+SUNY Morrisville,33,NY
+SUNY New Paltz,52,NY
+SUNY Old Westbury,25,NY
+SUNY Oneonta,730,NY
+SUNY Oswego,295,NY
+SUNY Plattsburgh,42,NY
+SUNY Polytechnic Institute,4,NY
+SUNY Purchase College,30,NY
+SUNY University at Buffalo,249,NY
+SUNY Westchester Community College,66,NY
+SUNY at Fredonia,151,NY
+Sarah Lawrence College,5,NY
+Schenectady County Community College,5,NY
+Siena College,84,NY
+Skidmore College,7,NY
+St. Bonaventure University,17,NY
+St. Francis College,3,NY
+St. John Fisher College,101,NY
+St. John's University,36,NY
+St. Joseph's College Long Island,6,NY
+St. Joseph's College New York,5,NY
+St. Lawrence University,3,NY
+St. Thomas Aquinas College,18,NY
+Stony Brook University*,524,NY
+Suffolk County Community College,135,NY
+Syracuse University,257,NY
+The College of Saint Rose,4,NY
+"The Graduate Center, CUNY",2,NY
+The New School,3,NY
+Tompkins Cortland Community College,18,NY
+Touro College,17,NY
+Trocaire College,6,NY
+Ulster County Community College,2,NY
+United States Merchant Marine Academy,3,NY
+United States Military Academy West Point,109,NY
+University of Rochester*,37,NY
+Upstate Medical University*,83,NY
+Utica College,21,NY
+Vassar College,38,NY
+Wagner College,17,NY
+Weill Cornell Medical College*,4,NY
+Yeshiva University,5,NY
+Baldwin Wallace University,53,OH
+Bluffton University,2,OH
+Bowling Green State University,555,OH
+Bowling Green State University Firelands,4,OH
+Capital University,6,OH
+Case Western Reserve University,62,OH
+Cedarville University,28,OH
+Central State University,23,OH
+Cleveland State University,8,OH
+Columbus College of Art and Design,1,OH
+Cuyahoga Community College District,19,OH
+Defiance College,69,OH
+Denison University,10,OH
+Franciscan University of Steubenville,27,OH
+Heidelberg University,65,OH
+Hiram College,13,OH
+John Carroll University,122,OH
+University Heights,0,OH
+Kent State University,404,OH
+Kenyon College,1,OH
+Lake Erie College,15,OH
+Malone University,33,OH
+Marietta College,53,OH
+Miami University (Ohio),2248,OH
+Mount Saint Joseph University,12,OH
+Muskingum University,5,OH
+Northeast Ohio Medical University*,12,OH
+Notre Dame College,23,OH
+Oberlin College,19,OH
+Ohio Dominican University,81,OH
+Ohio Northern University,51,OH
+Ohio State University,3711,OH
+Ohio University,604,OH
+Ohio University-Chillicothe,1,OH
+Ohio University-Eastern,1,OH
+Ohio University-Lancaster,1,OH
+Ohio University-Southern,5,OH
+Ohio University-Zanesville,4,OH
+Ohio Wesleyan University,125,OH
+Otterbein University,73,OH
+Shawnee State University,47,OH
+Sinclair Community College,24,OH
+Terra State Community College,12,OH
+The College of Wooster,24,OH
+The University of Findlay,81,OH
+Tiffin University,54,OH
+University of Akron,119,OH
+University of Cincinnati,854,OH
+University of Dayton,1455,OH
+University of Mount Union,79,OH
+University of Toledo,421,OH
+Ursuline College,7,OH
+Walsh University,44,OH
+Wilmington College,10,OH
+Wittenberg University,186,OH
+Wright State University,76,OH
+Wright State University-Lake Campus,1,OH
+Xavier University,45,OH
+Youngstown State University,43,OH
